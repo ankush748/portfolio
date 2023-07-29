@@ -1,0 +1,222 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+/* ... Previous styles ... */
+
+/* Animated background */
+body {
+  background: linear-gradient(-45deg, #ff4e50, #f9d423, #08aeea, #2af598);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ... Remaining styles ... */
+
+/* Header styles */
+
+
+/* Main content styles */
+/* ... Previous styles ... */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:first-child {
+  margin-left: 0;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
+/* ... Previous styles ... */
+
+.header-content {
+  text-align: center;
+}
+
+.fade-in-out {
+  animation: fadeInOut 5s infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* ... Remaining styles ... */
+
+/* ... Remaining styles ... */
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* About section styles */
+#about {
+  margin-bottom: 2rem;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Projects section styles */
+#projects .project-card {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+#projects .project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#projects .project-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#projects .project-card a {
+  display: inline-block;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+#projects .project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact section styles */
+#contact {
+  margin-bottom: 2rem;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact form {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+#contact label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+#contact textarea {
+  resize: vertical;
+}
+
+#contact button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  transition: opacity 0.3s ease;
+}
+
+#contact button:hover {
+  opacity: 0.8;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: #24292e;
+  color: #fff;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
